@@ -12,6 +12,8 @@ Dependencies:
 Usage
 -----
 
-```make destroy-all-data
+```
+make destroy-all-data
 make import
-make query```
+make query
+```
