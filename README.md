@@ -14,6 +14,18 @@ Usage
 
 ```
 make destroy-all-data
-make import
+make load_csv
 make query
+```
+
+OR 
+
+```
+./neo4j/bin/neo4j stop
+rm -rf neo4j/data/graph.db
+make import_tool
+./neo4j/bin/neo4j start
+make constraints
+make query
+
 ```

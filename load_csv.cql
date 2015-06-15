@@ -6,7 +6,7 @@ MERGE (:Country {name: 'New Zealand'});
 
 USING PERIODIC COMMIT 10000
 LOAD CSV WITH HEADERS FROM 'file:///tmp/nz-street-address-electoral.csv' AS line
-CREATE (address:Address {id: line.id, text: line.address, locality: line.locality, ta: line.territorial_authority});
+CREATE (address:Address {id: line.id, text: line.address});
 
 USING PERIODIC COMMIT 10000
 LOAD CSV WITH HEADERS FROM 'file:///tmp/nz-street-address-electoral.csv' AS line
